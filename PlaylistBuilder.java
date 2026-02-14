@@ -133,8 +133,6 @@ public class PlaylistBuilder {
         // TODO 7: Generate output filename and message based on choice
         // If choice == 1: filename = "playlist_least_played.txt"
         // If choice == 2: filename = "playlist_most_played.txt"
-        // ============================================
-        // ============================================
         
         try (PrintWriter writer = new PrintWriter(new FileWriter(filename))) {
             for (Map.Entry<String, Integer> entry : sortedSongs) {
@@ -144,7 +142,6 @@ public class PlaylistBuilder {
             System.out.println("Error writing to file: " + e.getMessage());
             return;
         }
-        // ============================================
 
         // TODO 9: Display completion message
         // Show the number of songs in the playlist
